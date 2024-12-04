@@ -4,9 +4,23 @@ import { type RecipeResponse } from '../../types/types';
 // const { data, error } = await useAsyncData("recipes", () => $fetch("https://dummyjson.com/recipes?limit=12"))
 
 const { data, error } = await useFetch<RecipeResponse>("https://dummyjson.com/recipes?limit=12") 
+
 // definePageMeta({
 //   layout: "login"
 // })
+
+useSeoMeta({
+  title: "NRecipes",
+  description: "Recipes for you to cook!",
+  ogTitle: "NRecipes",
+  ogDescription: "Recipes for you to cook!",
+  ogImage: "/nuxt-course-hero.png",
+  ogUrl: `http:localhost:3000/`,
+  twitterTitle: "NRecipes",
+  twitterDescription: "Recipes for you to cook!",
+  twitterImage: "/nuxt-course-hero.png",
+  twitterCard: 'summary'
+})
 </script>
 
 <template>
