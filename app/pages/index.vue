@@ -34,11 +34,13 @@ useSeoMeta({
           <p class="text-xl lg:text-2xl mb-8 text-balance">
             Discover recipes helping you to find the easiest way to cook.
           </p>
-          <button
+          <!-- <button 
             class="px-4 py-2 text-white self-start bg-dodgeroll-gold rounded-md text-lg cursor-pointer"
           >
             Browse Recipes
-          </button>
+          </button>-->
+          <UButton icon="i-mdi-arrow-right" trailing label="Browse Recipes" />
+          <!-- <UIcon name="i-mdi-arrow-right" class="w-10 h-10 text-dodgeroll-gold-500" /> -->
         </div>
         <div class="flex-1 order-1 lg:order-2">
           <NuxtImg
