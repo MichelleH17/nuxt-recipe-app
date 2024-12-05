@@ -34,13 +34,7 @@ useSeoMeta({
           <p class="text-xl lg:text-2xl mb-8 text-balance">
             Discover recipes helping you to find the easiest way to cook.
           </p>
-          <!-- <button 
-            class="px-4 py-2 text-white self-start bg-dodgeroll-gold rounded-md text-lg cursor-pointer"
-          >
-            Browse Recipes
-          </button>-->
-          <UButton icon="i-mdi-arrow-right" trailing label="Browse Recipes" />
-          <!-- <UIcon name="i-mdi-arrow-right" class="w-10 h-10 text-dodgeroll-gold-500" /> -->
+          <UButton to="#recipes" icon="i-mdi-arrow-right" trailing label="Browse Recipes" />
         </div>
         <div class="flex-1 order-1 lg:order-2">
           <NuxtImg
@@ -53,7 +47,7 @@ useSeoMeta({
         </div>
       </div>
     </section>
-    <section class="py-20 container">
+    <section id="recipes" class="py-20 container">
       <h2 class="text-3xl lg:text-5xl mb-2">Discover, Create, Share</h2>
       <p class="text-lg lg:text-xl mb-8">Check out our most popular recipes!</p>
       <div v-if="!error" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
