@@ -4,12 +4,13 @@ export default defineAppConfig({
     gray: 'cool',
     button: {
       default: {
-        size: "lg",
-        color: "blue"
+        size: "lg"
       },
-      rounded: "rounded-full",
       size: {
-        lg: "text-xl"
+        lg: "text-base lg:text-lg"
+      },
+      padding: {
+        lg: "py-2 px-4"
       }
     },
   }
